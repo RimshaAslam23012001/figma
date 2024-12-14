@@ -2,12 +2,14 @@
 
 import Image from "next/image"
 import Hero from "./Hero"
+import Navbar1 from "../components/Navbar1"
 
 
 export default function CheckoutPage() {
   return (
 <>
 <div>
+  <Navbar1/>
   <Hero />
 
 <div className="container mx-auto px-4 py-8 my-[120px]">

@@ -2,11 +2,12 @@ import Link from "next/link";
 import HeroS from "./HeroS"
 import React from "react"
 import Image from "next/image"
-
+import Navbar1 from '../components/Navbar1'
 
 export default function SignUpPage() {
   return (
     <>
+    <Navbar1/>
     <HeroS />
 
       <div className="min-h-screen bg-white">  
@@ -47,7 +48,9 @@ export default function SignUpPage() {
               type="submit"
               className="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 rounded"
             >
+              <Link href={"/Login"}>
               Sign Up
+              </Link>
             </button>
             <p className="text-center mt-4">
               <Link href="/Error" className="text-yellow-500">Forgot password?</Link>
@@ -56,11 +59,11 @@ export default function SignUpPage() {
           <div className="text-center mt-8">
             <p>or</p>
             <button className="w-full bg-gray-100 border text-black py-2 rounded mt-2 flex items-center justify-center">
-              <Image src='/google.png' alt="Google" className="w-[20px] h-[20px] left-[16px] mr-2" />
+              <Image src='/google.png' alt="Google" width={100} height={100} className="w-[20px] h-[20px] left-[16px] mr-2" />
               Sign up with Google
             </button>
             <button className="w-full bg-gray-100 border text-black py-2 rounded mt-2 flex items-center justify-center">
-              <Image src='/Apple.png' alt="Apple" className="w-[24px] h-[24px] left-[16px] mr-2" />
+              <Image src='/Apple.png' alt="Apple" width={100} height={100} className="w-[24px] h-[24px] left-[16px] mr-2" />
               Sign up with Apple
             </button>
           </div>

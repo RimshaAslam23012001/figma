@@ -1,14 +1,16 @@
 import React from 'react'
-import Index from './Index'
+import Cart from './cart'
 import Navbar1 from '../components/Navbar1'
+import Hero from './Hero'
 
 const Page = () => {
   return (
     <div>
-        <Navbar1/>
-      <Index />
+        <Navbar1 />
+        <Hero/>
+      <Cart />
     </div>
   )
 }
 
-export default Page
+export default Page;

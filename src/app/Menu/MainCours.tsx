@@ -1,9 +1,41 @@
-
 import { Coffee} from 'lucide-react';
 import Image from 'next/image';
-import Heading from './Heading';
-import {  menuItems} from '../Constant/Men';
 
+interface MenuItem {
+    name: string
+    description: string
+    calories: number
+    price: number
+    highlight?: boolean
+  }
+  
+const menuItems: MenuItem[] = [
+    {
+      name: "Alder Grilled Chinook Salmon",
+      description: "Toasted French bread topped with romano, cheddar",
+      calories: 560,
+      price: 32
+    },
+    {
+      name: "Berries and creme tart",
+      description: "Gorgonzola, ricotta, mozzarella, taleggio",
+      calories: 700,
+      price: 43,
+      highlight: true
+    },
+    {
+      name: "Tormentoso Bush Pizza Pintoage",
+      description: "Ground cumin, avocados, peeled and cubed",
+      calories: 1000,
+      price: 14
+    },
+    {
+      name: "Spicy Vegan Potato Curry",
+      description: "Spreadable cream cheese, crumbled blue cheese",
+      calories: 560,
+      price: 35
+    }
+  ]
 export default function MainCours() {
   return (
     <section className="w-full mx-auto mt-[120px] px-4 sm:px-6 lg:px-8">
@@ -12,7 +44,7 @@ export default function MainCours() {
         <div className="w-full lg:w-1/2 lg:pl-8">
           <div className="flex flex-col mb-8">
             <Coffee className="ml-2 text-[#FF9F0D]" size={24} />
-            <Heading text="Main Course" />
+            <h1 className='text-[48px] leading-[56px] text-[#333333] font-bold mb-[24px]'>Main Course</h1>
           </div>
           <div className="space-y-8">
             {menuItems.map((item, index) => (

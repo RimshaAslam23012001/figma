@@ -18,9 +18,11 @@ export default function ArticleContent() {
         </p>
   
         <Image
-          src="/pic6.png"
+          src="/food3.png"
           alt="Inline Image"
           className="w-full rounded-lg"
+          height={100}
+          width={200}
         />
         <p className="text-gray-700">
           Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum

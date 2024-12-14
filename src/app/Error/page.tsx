@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Hero from "./Hero"
-
+import Navbar1 from "../components/Navbar1"
 export default function ErrorPage() {
   return (
     <>
+    <Navbar1/>
     <Hero />
     <div className="min-h-screen bg-white">
       

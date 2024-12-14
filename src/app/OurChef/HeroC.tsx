@@ -11,11 +11,11 @@ function Hero() {
             Our Chef
           </h1>
           <div className='text-base sm:text-lg md:text-xl flex gap-2 text-center justify-center'>
-            <Link href="/Chaf" className='text-white hover:text-[#FF9F0D] transition-colors duration-300'>
-             Chaf
+            <Link href={"/Chaf"} className='text-white hover:text-[#FF9F0D] transition-colors duration-300'>
+             Home
             </Link>
             <span className='text-white'>/</span>
-            <Link href="/OurChefs" className='text-[#FF9F0D]'>
+            <Link href={"/OurChefs"} className='text-[#FF9F0D]'>
               Chef
             </Link>
           </div>

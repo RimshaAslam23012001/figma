@@ -2,9 +2,12 @@ import Link from "next/link";
 import { IoChevronForwardOutline } from "react-icons/io5";
 import { FcGoogle } from "react-icons/fc";
 import { ImAppleinc } from "react-icons/im";
+import Navbar1 from "../components/Navbar1";
 
 export default function SignInPage() {
   return (
+    <div>
+      <Navbar1/>
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className=" bg-black">
@@ -13,14 +16,12 @@ export default function SignInPage() {
         className="h-[300px] md:h-[400px] lg:h-[500px] bg-cover bg-center"
         style={{ backgroundImage: "url('/heropic.png')" }}>
     
-       
-      
         {/* Centered Text */}
         <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold">Sign In page</h1>
           <p className="text-sm md:text-base lg:text-lg mt-2 flex items-center gap-2">
             <span className="text-white ">Home</span>
-            <IoChevronForwardOutline />
+            <IoChevronForwardOutline className="text-white"/>
             <span  className="text-[#FF9F0D]">Sign In</span>
           </p>
         </div>
@@ -32,14 +33,7 @@ export default function SignInPage() {
         <div className="container mx-auto max-w-md bg-white shadow-lg rounded-md p-8">
           <h3 className="text-2xl font-bold mb-6 text-center">Sign In</h3>
           <form>
-            <div className="mb-4">
-              <label className="block mb-2 font-medium">Name</label>
-              <input
-                type="text"
-                className="w-full border rounded px-3 py-2 focus:ring focus:ring-yellow-300"
-                placeholder="Enter your name"
-              />
-            </div>
+          
             <div className="mb-4">
               <label className="block mb-2 font-medium">Email</label>
               <input
@@ -84,6 +78,7 @@ export default function SignInPage() {
         </div>
       </section>
 
+    </div>
     </div>
     );
 }

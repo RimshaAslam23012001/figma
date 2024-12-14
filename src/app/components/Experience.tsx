@@ -1,7 +1,31 @@
 import Image from 'next/image'
 import React from 'react'
-import { ExperienceItem } from '../Constant/Esp'
 
+
+ const ExperienceItem = [
+  {
+   src:"/cap.png",
+    value: "420",
+    label: "Professional Chefs"
+  },
+  {
+
+      src:"/burger.png",
+    value: "320",
+    label: "Items Of Food"
+  },
+  {
+
+   src:"/spon.png",
+    value: "30+",
+    label: "Years Of Experienced"
+  },
+  {  
+    src:"/pizza.png",
+    value: "220",
+    label: "Happy Customers"
+  }
+]
 export default function Experience() {
   return (
     <section className="relative py-10 sm:py-16 lg:py-20 bg-cover bg-center bg-[url('/menu.png')]">

@@ -1,13 +1,30 @@
-import React from 'react'
-import FAQPage from './FaqP'
-import Hero from './Hero'
 
+import FaqP from "./FaqP"
+import Navbar1 from "../components/Navbar1"
+import { IoChevronForwardOutline } from "react-icons/io5"
 
 const FAQpage = () => {
   return (
     <div>
-      <Hero />
-      <FAQPage />
+      <Navbar1/>
+      <section className='w-full bg-[url("/heropic.png")] bg-cover bg-no-repeat bg-center py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28'>
+      <div className='container mx-auto px-4'>
+        <div className='flex flex-col items-center'>
+          <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-white font-bold text-center mb-4 sm:mb-6'>
+            FAQ page
+          </h1>
+           <p className="text-sm md:text-base lg:text-lg mt-2 flex items-center gap-2">
+                     <span className="text-white ">Home</span>
+                     <IoChevronForwardOutline className="text-white"/>
+                     <span  className="text-[#FF9F0D]">FAQ</span>
+                   </p>
+        </div>
+      </div>
+    </section>
+    <FaqP />
+
+
+
     </div>
   )
 }
